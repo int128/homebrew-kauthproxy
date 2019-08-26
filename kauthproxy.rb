@@ -1,9 +1,9 @@
 class Kauthproxy < Formula
   desc "A kubectl plugin to forward a local port to a pod or service via authentication proxy"
   homepage "https://github.com/int128/kauthproxy"
-  url "https://github.com/int128/kauthproxy/releases/download/v0.2.0/kauthproxy_darwin_amd64.zip"
-  version "v0.2.0"
-  sha256 "47e19dc3e8764e9439f3d496f952de6d49343f183cea5e75ee59ede0a783fdd6"
+  url "https://github.com/int128/kauthproxy/releases/download/v0.3.0/kauthproxy_darwin_amd64.zip"
+  version "v0.3.0"
+  sha256 "a4fbf5a17f0c8b1d4dc8b0ea73a4a3a0ee6aa81aa40545c7e5836fdcaa5f7a77"
   def install
     bin.install "kauthproxy" => "kauthproxy"
     ln_s bin/"kauthproxy", bin/"kubectl-auth_proxy"
